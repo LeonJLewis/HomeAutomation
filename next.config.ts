@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
+  // Keep the dev tools badge clear of the sidebar's user avatar
+  devIndicators: {
+    position: "bottom-right",
+  },
   turbopack: {
     rules: {
       "*.css": {
